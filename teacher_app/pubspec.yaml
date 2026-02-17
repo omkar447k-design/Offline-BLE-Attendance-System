@@ -1,0 +1,31 @@
+name: teacher_app
+description: Offline BLE Attendance Teacher App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_ble_peripheral: ^1.2.0
+  flutter_blue_plus: ^1.32.8
+  shared_preferences: ^2.2.2
+  permission_handler: ^11.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "image.png"
+  adaptive_icon_background: "#2196F3"
+  adaptive_icon_foreground: "image.png"
+
+flutter:
+  uses-material-design: true

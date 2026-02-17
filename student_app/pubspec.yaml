@@ -1,0 +1,33 @@
+name: student_app
+description: Offline BLE Attendance Student App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.32.8
+  flutter_ble_peripheral: ^1.2.0
+  shared_preferences: ^2.2.2
+  permission_handler: ^11.2.0
+  device_info_plus: ^10.1.0
+  local_auth: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "image.png"
+  adaptive_icon_background: "#4CAF50"
+  adaptive_icon_foreground: "image.png"
+
+flutter:
+  uses-material-design: true
