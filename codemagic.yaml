@@ -1,0 +1,14 @@
+ 
+workflows:
+  student-app:
+    name: Student App
+    working_directory: student_app
+    environment:
+      flutter: stable
+    scripts:
+      - name: Get packages
+        script: flutter pub get
+      - name: Build iOS
+        script: flutter build ios --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.app
